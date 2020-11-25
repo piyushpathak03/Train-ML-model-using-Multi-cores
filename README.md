@@ -14,6 +14,8 @@ so own
 ### n_jobs = -1 :- All cores used at a time when you don't know the number of cores present in your system.
 
 
+#### n_jobs indirectly proportional to time taken while training of model. As the number of cores increases ,time taken by model will reduce.
+
 
 n_jobsint, default=None
 The number of jobs to run in parallel. fit, predict, decision_path and apply are all parallelized over the trees. None means 1 unless in a joblib.parallel_backend context. -1 means using all processors. See Glossary for more details.
